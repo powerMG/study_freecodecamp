@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>制作一个调查表格</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .content {
+        grid-column: 2/3;
+        box-shadow: 0 0 10px rgba(1, 1, 1, 0.85);
+        padding: 20px;
+        height: 500px;
+      }
+      header{
+          text-align: center;
+      }
+      #description{
+          color: #a5a5a5;
+      }
+      footer {
+        height: 50px;
+        background-color: #fff;
+        line-height: 50px;
+        color: #bbb;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="content">
+        <header>
+          <h1 id="title">调查问卷</h1>
+          <p id="description">关于XXX的调查问卷收集表</p>
+        </header>
+        <section>
+          <form action="" id="survey-form">
+            <label for="name" id="name-label">名称</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value="张三"
+              placeholder="输入我的名字"
+              required
+            />
+            <label for="email" id="email-label">邮箱</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="输入邮箱"
+              required
+            />
+            <label for="number" id="number-label">评分</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="输入数字"
+              min="1"
+              max="100"
+            />
+            <select name="dropdown" id="dropdown">
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+            </select>
+            <fieldset>
+              <legend>职业</legend>
+              <label for="RD">技术人员</label>
+              <input type="radio" name="zhiye" value="1" id="RD" checked />
+              <label for="SPE">销售人员</label>
+              <input type="radio" name="zhiye" value="2" id="SPE" />
+            </fieldset>
+            <fieldset>
+              <legend>希望后续支持那些技术</legend>
+              <label for="vue">vue</label>
+              <input type="checkbox" name="vue" value="1" id="vue" />
+              <label for="react">react</label>
+              <input type="checkbox" name="react" value="2" id="react" />
+              <label for="uniapp">uniapp</label>
+              <input type="checkbox" name="uniapp" value="3" id="uniapp" />
+            </fieldset>
+            <label for="remark"></label>
+            <textarea name="remark" id="remark" cols="30" rows="10"></textarea>
+            <button type="submit" id="submit">提交</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div>
+        个人练习使用，如果有涉及到版权问题请联系<a
+          href="mailto:wxm1026sx@163.com"
+          >本人邮箱</a
+        >，我会尽快删除相关内容，谢谢！
+      </div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
