@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>【练习项目3】制作一个登陆页</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: #eee;
+      }
+      header {
+        position: fixed;
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        opacity: 0.6;
+      }
+      header > img {
+        height: 50px;
+        width: 100px;
+      }
+      header > #nav-bar {
+        align-self: center;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      header > #nav-bar > .nav-link {
+        width: 100px;
+        margin-right: 10px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        border: solid;
+      }
+      @media (max-width: 800px) {
+        header {
+          display: none;
+        }
+      }
+      .content{
+        min-height: 830px;
+      }
+      footer {
+        height: 50px;
+        background-color: #fff;
+        line-height: 50px;
+        color: #bbb;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        src="https://tse3-mm.cn.bing.net/th/id/OIP.ac7xrU0xw_H8JdAtT5wDpAHaF-?w=237&h=191&c=7&o=5&dpr=2&pid=1.7"
+        alt="logo"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <a href="#nav1" class="nav-link">导航1</a>
+        <a href="#nav2" class="nav-link">导航2</a>
+        <a href="#nav3" class="nav-link">导航3</a>
+      </nav>
+    </header>
+    <div class="content">
+      <div id="nav1">
+        <video
+          src="https://static.pexels.com/lib/videos/free-videos.mp4"
+          id="video"
+          width="100%"
+          muted
+          autoplay
+          loop
+        ></video>
+      </div>
+      <div id="nav2">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input type="email" name="email" id="email" placeholder="输入邮箱" />
+          <!-- <button type="submit" id="submit">提交</button> -->
+          <input type="submit" value="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+    <footer id="nav3">
+      <div>
+        个人练习使用，如果有涉及到版权问题请联系<a
+          href="mailto:wxm1026sx@163.com"
+          >本人邮箱</a
+        >，我会尽快删除相关内容，谢谢！
+      </div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
