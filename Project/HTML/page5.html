@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>【项目练习5】制作一个作品集页</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      @media (max-width: 800px) {
+        #navbar {
+          display: none;
+        }
+      }
+      #navbar {
+        width: 100%;
+        position: fixed;
+        height: 80px;
+        background: #be3144;
+        top: 0;
+      }
+      #navbar > a {
+        height: 80px;
+        line-height: 80px;
+        width: 150px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        float: left;
+        text-align: center;
+      }
+      #navbar > a:hover {
+        background: #45567d;
+        cursor: pointer;
+      }
+      #welcome-section {
+        margin-top: 80px;
+        height: 100%;
+        background-color: #000;
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+      }
+      #projects {
+        height: 100%;
+      }
+      .project-item {
+        height: 400px;
+        width: 300px;
+        box-shadow: 0 0 6px rgb(1 1 1 / 85%);
+        float: left;
+        margin: 40px;
+        text-align: center;
+        padding: 10px 5px;
+      }
+      .project-item > a {
+        font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .project-item > img {
+        width: 100%;
+      }
+      footer {
+        height: 50px;
+        background-color: #fff;
+        line-height: 50px;
+        color: #bbb;
+        text-align: center;
+        border-top: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="nav-link">关于我们</a>
+      <a href="#projects" class="nav-link">相关项目</a>
+      <a href="#other" class="nav-link">其他信息</a>
+    </nav>
+    <div id="welcome-section">
+      <h1>欢迎来到我的主页：powerMG</h1>
+      <p>一个web开发</p>
+    </div>
+    <div id="projects">
+      <div class="project-item">
+        <a href="https://codepen.io/powermg/pen/QWGJRvx" class="project-tile"
+          >一个简单的致敬页</a
+        >
+        <img
+          src="https://assets.codepen.io/5880302/internal/screenshots/pens/QWGJRvx.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1615391319&width=960"
+          alt="致敬页图"
+        />
+      </div>
+      <div class="project-item"></div>
+      <div class="project-item"></div>
+      <div class="project-item"></div>
+      <div>
+        <a
+          id="profile-link"
+          href="https://codepen.io/your-work/"
+          target="_blank"
+          >更多作品>></a
+        >
+      </div>
+    </div>
+    <footer id="other">
+      <div>
+        个人练习使用，如果有涉及到版权问题请联系<a
+          href="mailto:wxm1026sx@163.com"
+          >本人邮箱</a
+        >，我会尽快删除相关内容，谢谢！
+      </div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
