@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>【练习项目4】制作一个技术文档页</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #navbar{
+        border-right: solid 2px #eee;
+        display: grid;
+        grid-template-rows: 80px repeat(5,50px);
+        text-align: center;
+      }
+      @media (max-width:800px)
+      {
+        #navbar{
+          display: none;
+        }
+      }
+      #navbar>header{
+        border-bottom: solid 1px #eee;
+        line-height: 80px;
+      }
+      #navbar>a{
+        border-bottom: solid 1px #eee;
+        line-height: 50px;
+      }
+      .main-section {
+        min-height: 350px;
+        border-top: solid 1px #eee;
+      }
+      footer {
+        height: 50px;
+        background-color: #fff;
+        line-height: 50px;
+        color: #bbb;
+        text-align: center;
+        border-top: 1px solid #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <nav id="navbar">
+      <header>XXXAPI使用文档</header>
+      <a href="#nav1" class="nav-link">nav1</a>
+      <a href="#nav2" class="nav-link">nav2</a>
+      <a href="#nav3" class="nav-link">nav3</a>
+      <a href="#nav4" class="nav-link">nav4</a>
+      <a href="#nav5" class="nav-link">nav5</a>
+    </nav>
+    <main id="main-doc">
+      <section id="nav1" class="main-section">
+        <header>nav1</nav></header>
+        <p></p>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <code></code>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <section id="nav2" class="main-section">
+        <header>nav2</header>
+      </section>
+      <section id="nav3" class="main-section">
+        <header>nav3</header>
+      </section>
+      <section id="nav4" class="main-section">
+        <header>nav4</header>
+      </section>
+      <section id="nav5" class="main-section">
+        <header>nav5</header>
+      </section>
+    </div>
+  </main>
+    <footer id="nav3">
+      <div>
+        个人练习使用，如果有涉及到版权问题请联系<a
+          href="mailto:wxm1026sx@163.com"
+          >本人邮箱</a
+        >，我会尽快删除相关内容，谢谢！
+      </div>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
